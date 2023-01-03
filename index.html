@@ -7,11 +7,51 @@
     <title>CRUD</title>
 
     <link rel="stylesheet" href="./CSS/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <span>Cadastro de funcionários</span>
+            <button onclick="openModal()" id="novoFunc">Cadastrar</button>
+        </div>
     
 
+    <div class="divTabela">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Função</th>
+                    <th>Salário</th>
+                    <th class="acao">Editar</th>
+                    <th class="acao">Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container-modal">
+        <div class="modal">
+            <form>
+                <label for="modal-nome">Nome</label>
+                <input id="modal-nome" type="text" required/>
+
+                <label for="modal-funcao">Função</label>
+                <input id="modal-funcao" type="text" required/>
+
+                <label for="modal-salario">Salário</label>
+                <input id="modal-salario" type="text" required/>
+
+                <button id="salvar">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+</div>
     <script src="scripts.js"></script>
 </body>
 </html>
